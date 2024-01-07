@@ -14,7 +14,15 @@
     --color-grey-dark-3: #999;
 
     --shadow-dark: 0 2rem 6rem rgba(0,0, 0, 0.3);
+    --shadow-light: 0 2rem 5rem rgba(0,0, 0, 0.06);
+
+    --line: 1px solid var(--color-grey-light-2);;
 }
+
+
+$bg-largest:75rem;
+$bg-larg:68.75rem;
+$bg-medium: 56.25;// 900
 
 *,*::before, *::after{
     margin: 0;
@@ -25,6 +33,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px , 10 / 16 = 62.5
+
+    @media only screen and (max-width: $bg-larg) {
+        font-size: 50%;
+    }
 }
 
 body{
@@ -39,3 +51,5 @@ body{
 
    min-height: 100vh;
 }
+
+
